@@ -1,0 +1,243 @@
+body{
+	margin: 0px;
+	transition: all 1s;
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src:url(../fonts/Nunito-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+.mainHeader{
+	  position: fixed; 
+    top: -60px; 
+    transition: all 0.5s;
+    width: 100vw;
+    z-index: 1;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/* CSS for the powerful blue neon glowing text effect */
+.neon-text {
+  font-size: 48px; /* Adjust font size as needed */
+  color: #827e7e; /* Text color */
+  text-shadow: 0 0 5px #777979, 0 0 20px #797b7c, 0 0 40px #6a6b6b, 0 0 80px #6b6d6d, 0 0 120px #525353, 0 0 140px #585859, 0 0 180px #717374; /* Multiple shadows for the powerful neon effect */
+  animation: glowing 1.5s ease-in-out infinite alternate; /* Adjust duration and animation timing as needed */
+}
+.neon-text-1 {
+  /* font-size: 48px; Adjust font size as needed */
+  color: #5b5757; /* Text color */
+  text-shadow: 0 0 5px #696a6a, 0 0 20px #676868, 0 0 40px #535354, 0 0 80px #727677, 0 0 120px #6f7374, 0 0 140px #565859, 0 0 180px #b4b8ba; /* Multiple shadows for the powerful neon effect */
+  animation: glowing 1.5s ease-in-out infinite alternate; /* Adjust duration and animation timing as needed */
+}
+
+/* Keyframes for the glowing animation */
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #8c8d8e, 0 0 20px #888a8b, 0 0 40px #8c9091, 0 0 80px #96999a, 0 0 120px #abaeaf, 0 0 140px #9b9e9f, 0 0 180px #838686; /* Initial neon glow color and size */
+  }
+  100% {
+    text-shadow: 0 0 10px #717475, 0 0 40px #737676, 0 0 80px #808283, 0 0 160px #717272, 0 0 240px #898c8e, 0 0 280px #aaaeaf, 0 0 360px #c2c6c7; /* Increased neon glow color and size */
+  }
+}
+
+/* HTML element that will have the glowing effect */
+.header-section {
+  background: #e9ede9;
+  background-image: url('../img/img1.png');
+  text-align: center;
+  min-height: 500px;
+  height:100vh;
+}
+.header-section img {
+  margin-top: 7em;
+}
+.header-section h2 {
+  font-family: 'Nunito-Bold';
+  font-size: 4em;
+  text-transform: capitalize;
+  color: #d3d3d3;
+  padding: 0.5em 0 0 0;
+}
+.header-section span {
+  color: #2fbbbb;
+  font-size: 1em;
+}
+.header-section p {
+  font-family: 'Nunito-Bold';
+  font-size: 1.3em;
+  color: #ffffff;
+}
+span.glyphicon.glyphicon-triangle-bottom {
+  font-size: 2em;
+  color: #ffffff;
+  background-color: rgb(0, 207, 189);
+  padding: 0.5em 2em;
+  border-radius: 5px 5px 0 0;
+  margin-top: 2.5em;
+}
+.about{
+	background-size: cover;
+	background: #deecdf;
+/* 	background-image: url('../img/2.jpg');
+ */	padding-bottom: 5vw;
+	text-align: center;
+}
+.about h3{
+	font-family: 'Nunito-Bold';
+  	font-size: 2.5em;
+  	text-transform: capitalize;
+  	color: #393b3a;
+  	padding-bottom: 2%;
+}
+.yourPic{
+	    padding-left: 0%;
+	    transition:  all 0.5s;
+}
+@media only screen and (min-width:200px) and (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+	.yourPic{
+	    padding-left: 0%;
+	}
+}
+@media only screen and (min-width:321px) and (max-width:400px)  { /* smartphones, Android phones, landscape iPhone */
+	.yourPic{
+	    padding-left: 10%;
+	}
+}
+@media only screen and (min-width:401px) and (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.yourPic{
+	    padding-left: 25%;
+	}
+	
+}
+@media only screen and (min-width:601px) and (max-width:767px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.yourPic{
+	    padding-left: 30%;
+	}
+}
+@media only screen and (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media only screen and (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+}
+@media only screen and (max-width:1281px) { /* hi-res laptops and desktops */ 
+}
+
+.skills{
+}
+.social-icons{
+	background-color: rgba(49, 49, 47, 0.4);	 height: 5vh;
+	text-align: center;	
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #0073b1; /* LinkedIn color */
+}
+
+.social-icons a.github:hover {
+  color: #333; /* GitHub color */
+}
+
+.social-icons a.email:hover {
+  color: #ea4335; /* Gmail color */
+}
+	
+.contactMe{
+
+}
+.contact-section {
+  padding: 4em 0;
+  background: #deecdf;
+ 
+ }
+.contact-section h3 {
+    font-family: 'Nunito-Bold';
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+.contact-details form input[type="text"],.contact-details form textarea {
+	width: 100%;
+	padding: 1.5em 1em;
+	border: 1px solid #7ca17f;
+	font-size: 1.1em;
+	margin-bottom: 1.2em;
+	color: #Aac8ac;
+	outline: none;
+	background:transparent;
+	font-weight: 600;
+}
+.contact-details form textarea {
+	height: 244px;
+	resize: none;
+	width: 100%;
+}
+.contact-right{
+	text-align:right;
+}
+.contact-details input[type="submit"] {
+	background: #393b3a;
+	padding: 1em 2em;
+	border: none;
+	font-size: 1em;
+	margin: 0.5em 0 0 0;
+	color: #fff;
+	outline: none;
+	font-weight: 600;
+	border-radius:5px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.contact-details input[type="submit"]:hover {
+  color: #fff;
+  background: rgb(0, 207, 189);
+}
+.mainFooter{
+	background-color: #000000;
+	color: #ffffff;
+}
+.footer-top{
+	text-align: center;
+	font-family: 'Nunito-Bold';
+  	font-size: 1em;
+  	text-transform: capitalize;
+  	padding-top: 10px;
+}
+.panel-default>.panel-heading {
+    background-color: #db0f31;
+}
+.navbar-inverse .navbar-nav>li:hover {
+    background-color: #9d9d9d;
+    color: white;
+    border-radius: 4px;
+}
+.navbar-inverse {
+    background-color: #000000;
+    border: none;
+}
+
+
